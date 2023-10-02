@@ -1,0 +1,102 @@
+:root{
+    --standard-green:#1aff66; 
+}
+
+* {
+    font-family: Verdana;
+    background-color: #14181C;
+    color: azure;
+}
+
+span {
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:not(:last-child) { 
+    margin-bottom: .5rem;  
+ }
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover, .stack-icons i:hover{
+    color: var(--standard-green);
+    transition-duration: .3s;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .1rem;
+  border-radius: .4rem;
+  background-color: var(--standard-green);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.green{
+    color: var(--standard-green);
+}
+
+.title-container, .links, #description, .about-me, .stack-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links, .stack {
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.links a {
+    cursor: pointer;
+}
+
+.about-me .text {
+    width: 40%;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 12rem;
+    font-size: 2.2rem;
+}
+
+
+#description {
+    font-size: 1.2rem;
+    color: var(--standard-green);
+}
+
+#description::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+#display-projects {
+    display: none;
+}
+
+
+.stack-icons {
+    margin-top: 2rem;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
