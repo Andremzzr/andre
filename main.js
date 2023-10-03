@@ -3,11 +3,19 @@ const textToBeTyped = "- Full-Stack developer and cornflakes fan;"
 
 function displayContent(e){
   const allDivs = document.getElementsByClassName('display-div');
-  for(var i=0;i<allDivs.length;i++){
+  const activeDivs = document.getElementsByClassName('active');
+
+  for(let i=0;i<activeDivs.length;i++){
+    activeDivs[i].classList.remove('active');
+  }
+
+  for(let i=0;i<allDivs.length;i++){
     allDivs[i].style.display = 'none';
   }
   
-  document.getElementById(`display-${e.id}`).style.display = 'block';
+  const displayDiv = document.getElementById(`display-${e.id}`)
+  displayDiv.style.display = 'block';
+  e.classList.add('active')
 }
 
 function playAnim(index=0,isAdding=true) {

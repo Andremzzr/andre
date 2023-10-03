@@ -25,12 +25,15 @@ a {
   text-decoration: none;
 }
 
+.active {
+    color: var(--standard-green);
+}
 a:hover, .stack-icons i:hover{
     color: var(--standard-green);
     transition-duration: .3s;
 }
 
-a::before {
+a::before{
   content: '';
   position: absolute;
   width: 100%;
