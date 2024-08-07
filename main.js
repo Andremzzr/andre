@@ -30,7 +30,7 @@ function playAnim(index=0,isAdding=true) {
         
         setTimeout( function () {
           playAnim(index,isAdding)
-        }, 2000)
+        }, 4000)
         return
       } else {
       
@@ -48,7 +48,7 @@ function playAnim(index=0,isAdding=true) {
     }
     
     playAnim(index,isAdding)
-  }, 120)
+  }, 50)
 }
 
 playAnim()

@@ -33,7 +33,7 @@ a:hover, .stack-icons i:hover{
     transition-duration: .3s;
 }
 
-a::before{
+.hover-line::before{
   content: '';
   position: absolute;
   width: 100%;
@@ -92,8 +92,15 @@ a:hover::before {
     animation: blink 1s infinite;
 }
 
-#display-projects {
+#display-projects, #display-experience {
     display: none;
+}
+
+.projects  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: .5rem;
 }
 
 

@@ -17,11 +17,12 @@
     <p id="description"></p>
 
     <div class="links">
-        <a id="home" onclick="displayContent(this)">home</a>
-        <a id="projects" onclick="displayContent(this)" class="clicked">projects</a>
-        <a href="https://github.com/Andremzzr" target="_blank">github</a>
-        <a href="https://www.linkedin.com/in/andr%C3%A9-mezzalira-ribeiro-90ab0b1ba/" target="_blank">linkedin</a>
-        <a href="https://twitter.com/kenmajs" target="_blank">twitter</a>
+        <a class="hover-line" id="home" onclick="displayContent(this)">about me</a>
+        <a class="hover-line" id="projects" onclick="displayContent(this)" class="clicked">projects</a>
+        <a class="hover-line"id="experience" onclick="displayContent(this)">experience</a>
+        <a class="hover-line" href="https://github.com/Andremzzr" target="_blank">github</a>
+        <a class="hover-line" href="https://www.linkedin.com/in/andr%C3%A9-mezzalira-ribeiro-90ab0b1ba/" target="_blank">linkedin</a>
+
     </div>
 
    
@@ -36,20 +37,49 @@
             </div>
 
             <div id="display-projects" class="display-div">      
+              <div class="projects">
+                  <a target="_blank" href="https://github.com/Andremzzr/DiscordGame">Pokemon Game with Discord Bot API</a>
+                  <a target="_blank" href="https://github.com/Andremzzr/PokeStayMarket">Web Application using Pokemon Bot's backend</a>
+                  <a target="_blank" href="https://github.com/Andremzzr/CodeMinerTest">Space Game API</a>
+                  <a target="_blank" href="https://github.com/Andremzzr/ApiProductsLumen">REST API with Lumen Framework</a>
+                  <a target="_blank" href="https://github.com/Andremzzr/RoverTest">Mars Rover Matrix Test</a>
+              </div>
+                  
+            </div>
+
+            <div id="display-experience" class="display-div">      
+               <p>
+                URBE.ME - 
+                Full-Stack Developer<br>
+                Porto Alegre, RS<br>
+                Jun. 2022 - Present
+               </p>
                 <ul>
-                    <li>
-                        <a target="_blank" href="https://github.com/Andremzzr/DiscordGame">--> Pokemon Game with Discord Bot API</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/Andremzzr/PokeStayMarket">--> Web Application using Pokemon Bot's backend</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/Andremzzr/CodeMinerTest">--> Space Game API</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/Andremzzr/ApiProductsLumen">--> REST API with Lumen Framework</a>
-                    </li>
+                    <li>Planned, developed, and maintained backend features using Django Template Views and REST APIs.</li>
+                    <li>Created and managed the frontend of the website using HTML, CSS, JavaScript, and Vue.js.</li>
+                    <li>Upgraded development approach by implementing Vue.js with Django Rest Framework.</li>
+                    <li>Enhanced application performance through optimized Django ORM queries.</li>
+                    <li>Established and maintained a staging environment on AWS (RDS, EC2, S3) and implemented a CI/CD pipeline using GitHub Actions.</li>
+                    <li>Developed a Chat to centralize user attendance with Product's team.  </li>
                 </ul>
+               <p>
+                   Grupo OSPA - 
+                   IT Analyst Jr<br>
+                   Porto Alegre, RS <br>
+                   Oct. 2021 - Jun. 2022
+               </p>    
+               <ul>
+                <li>
+                    Developed HR applications using Microsoft PowerApps and Microsoft SQL Server;
+                </li>
+                <li>
+                    Created finance dashboards using Power BI for comprehensive financial analysis and decision making.
+                </li>
+                <li>
+                    Automated tasks and workflows utilizing Python and Zapier to enhance workflow efficiency and productivity..  
+                </li>
+               </ul>                                                 
+               
             </div>
 
             <div class="stack-icons">
