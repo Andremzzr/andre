@@ -51,4 +51,5 @@ function playAnim(index=0,isAdding=true) {
   }, 50)
 }
 
+document.getElementById('home').classList.add('active')
 playAnim()
