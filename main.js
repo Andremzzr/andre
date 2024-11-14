@@ -1,5 +1,5 @@
 const typeText = document.querySelector("#description")
-const textToBeTyped = "- Full-Stack developer and cornflakes fan;"
+const textToBeTyped = "- Full-Stack Engineer and coffee addict;"
 
 function displayContent(e){
   const allDivs = document.getElementsByClassName('display-div');
