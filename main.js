@@ -1,9 +1,9 @@
 const typeText = document.querySelector("#description")
 const textToBeTyped = "- Full-Stack Engineer and coffee addict;"
+const allDivs = document.getElementsByClassName('display-div');
+const activeDivs = document.getElementsByClassName('active');
 
 function displayContent(e){
-  const allDivs = document.getElementsByClassName('display-div');
-  const activeDivs = document.getElementsByClassName('active');
 
   for(let i=0;i<activeDivs.length;i++){
     activeDivs[i].classList.remove('active');

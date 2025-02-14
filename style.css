@@ -10,13 +10,10 @@
 body { 
     margin: 0;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 section {
-    margin: 5rem;
+    padding: 5rem;
 }
 span {
     font-size: 1.6rem;
@@ -35,6 +32,9 @@ a {
   text-decoration: none;
 }
 
+.std-green {
+    color: var(--standard-green)
+}
 .active {
     color: var(--standard-green);
 }
@@ -66,27 +66,24 @@ a:hover::before {
     color: var(--standard-green);
 }
 
-.title-container, .links, #description, .about-me, .stack-icons{
+.stack-icons{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    gap: 2rem;
 }
 
 .links, .stack {
     gap: 2rem;
     margin-top: 2rem;
+    display: flex;
 }
 
 .links a {
     cursor: pointer;
 }
 
-.about-me .text {
-    width: 40%;
-}
-
 .title-container {
-    text-align: center;
     font-size: 2.2rem;
 }
 
@@ -111,11 +108,3 @@ a:hover::before {
     margin-top: 2rem;
     gap: .5rem;
 }
-
-
-.stack-icons {
-    margin-top: 2rem;
-    font-size: 2rem;
-    gap: 2rem;
-}
-
