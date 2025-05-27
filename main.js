@@ -1,5 +1,5 @@
 const typeText = document.querySelector("#description")
-const textToBeTyped = "- Full-Stack Engineer and coffee addict;"
+const textToBeTyped = window.width > 500 ? "- Full-Stack Engineer and coffee addict;" : "- Full-Stack Engineer;"
 const allDivs = document.getElementsByClassName('display-div');
 const activeDivs = document.getElementsByClassName('active');
 
